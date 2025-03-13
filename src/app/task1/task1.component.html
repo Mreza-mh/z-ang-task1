@@ -1,20 +1,20 @@
-    <div >
-      <div class="table-container">
+    <div class="table-container">
+      <div class="tablebox">
         <div *ngFor="let table of tables; let i = index" class="table-wrapper">
-          <h3>Level {{ i }}</h3>
+          <h3 >Level {{ i }}</h3>
           <table class="table table-hover">
             <thead>
               <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Action</th>
+                <th class="th-id"> ID </th>
+                <th class="th-name">Name</th>
+                <th class="th-action">Action</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody class="tbody">
               <tr
                 *ngFor="let item of table"
               >
-                <td [ngClass]="{ selected: isExpanded(item.id) } ">
+                <td [ngClass]="{ selected: isExpanded(item.id) } " >
                   {{ item.id }}
                 </td>
                 <td [ngClass]="{ selected: isExpanded(item.id) }">
