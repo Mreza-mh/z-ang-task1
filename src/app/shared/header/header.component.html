@@ -1,0 +1,75 @@
+<nav
+  [class.disabled]="isMenuOpen"
+  class="navbar navbar-expand-lg fixed-top d-flex align-items-center justify-content-around px-3  navv"
+>
+  <button
+    (click)="toggleMenu()"
+    class="navbar-toggler ms-auto"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbarmenu"
+    aria-controls="navbarmenu"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse"
+    [class.disabled]="isMenuOpen"
+    id="navbarmenu"
+  >
+    <div class="d-flex align-items-center ms-5 mt-2 navbar-nav">
+      <button class="d-flex align-items-center px-2 py-1 white-custom-btn">
+        ورود / ثبت نام
+        <img src="../../../assets/svg/header/man.svg" alt="" class="ms-2" />
+      </button>
+      <button
+        class="d-flex align-items-center col blue-custom-btn px-2 py-1 text-white ms-3 me-4"
+      >
+        ایجاد دوره
+        <img src="../../../assets/svg/header/plus.svg" alt="" class="ms-2" />
+      </button>
+    </div>
+
+
+    <div class="d-flex flex-grow-1 col-5 justify-content-end me-7">
+  <ul class="d-flex list-unstyled m-0 p-0">
+
+        <li *ngIf="hiddenMenuItems.length" class="d-flex align-items-center mx-3 position-relative">
+      <button class="btn btn-link text-decoration-none" (click)="toggleMoreMenu()"> ▼ بیشتر </button>
+      
+      <ul *ngIf="isMoreOpen" class="more-menu dropdown-menu ">
+        <li *ngFor="let item of hiddenMenuItems" class="ms-auto">
+          <a [href]="item.link" class="text-decoration-none ms-auto">{{ item.label }}</a>
+          <img [src]="item.svg" alt="" class="ms-2 mt-1 " />
+        </li>
+      </ul>
+    </li>
+
+    <li *ngFor="let item of visibleMenuItems" class="d-flex align-items-center mx-3">
+      <a [href]="item.link" class="text-decoration-none">{{ item.label }}</a>
+      <img [src]="item.svg" alt="" class="ms-2 " />
+    </li>
+  </ul>
+</div>
+    <a
+      href="#"
+      class="navbar-brand d-flex justify-content-around align-items-center col-1 mt-1 pe-5"
+    >
+      <img src="../../../assets/svg/header/logo.svg" alt="" class="me-4" />
+    </a>
+  </div>
+</nav>
+
+<div *ngIf="isLoaded">
+  <div class="menu-sidebar" [ngClass]="{ 'menu-open': isMenuOpen }">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item ms-auto d-flex" *ngFor="let item of menuItems">
+        <a class="nav-link">{{ item.label }}</a>
+        <img [src]="item.svg" alt="" class="ms-2" />
+      </li>
+    </ul>
+  </div>
+</div>
