@@ -18,6 +18,12 @@ import { LandingAdsComponent } from './task2/landing-page/landing-ads/landing-ad
 import { LandingSponserCardComponent } from './task2/landing-page/landing-sponser-card/landing-sponser-card.component';
 import { LandingCommentCardComponent } from './task2/landing-page/landing-comment-card/landing-comment-card.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TitleDescribeComponent } from './task2/single-page/title-describe/title-describe.component';
+import { TeacherCardComponent } from './task2/single-page/teacher-card/teacher-card.component';
+import { PrecourseCardComponent } from './task2/single-page/precourse-card/precourse-card.component';
+import { CourseScheduleComponent } from './task2/single-page/course-schedule/course-schedule.component';
+import { FAQCardComponent } from './task2/single-page/faq-card/faq-card.component';
+import { CostCardComponent } from './task2/single-page/cost-card/cost-card.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +42,13 @@ import { AppRoutingModule } from './app-routing.module';
     LandingEventCardComponent,
     LandingAdsComponent,
     LandingSponserCardComponent,
-    LandingCommentCardComponent
+    LandingCommentCardComponent,
+    TitleDescribeComponent,
+    TeacherCardComponent,
+    PrecourseCardComponent,
+    CourseScheduleComponent,
+    FAQCardComponent,
+    CostCardComponent
   ],
   imports: [
     BrowserModule,

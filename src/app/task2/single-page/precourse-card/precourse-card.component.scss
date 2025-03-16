@@ -1,0 +1,107 @@
+.prefix-card {
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgb(255, 255, 255);
+  padding: 10px 25px 20px 25px !important;
+  margin-bottom: 20px;
+  strong {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 17px;
+    color: #808080;
+  }
+
+  img {
+    scale: 1.2;
+  }
+}
+
+.text-container {
+  font-size: 22px;
+  margin-right: 3%;
+}
+.section-title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.instructor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.requirement-icon {
+  color: #0099ff;
+}
+
+.underline-full {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background: #cbcbcb;
+}
+
+@media (max-width: 768px) {
+  .prefix-card {
+    padding: 15px !important; 
+  }
+
+  .text-container {
+    font-size: 18px !important;
+    margin-right: 5% !important;
+  }
+
+  .d-flex {
+    flex-direction: row !important;
+    align-items: center !important;
+    padding: 8px !important;
+  }
+
+  svg {
+    width: 24px !important; 
+    height: 24px !important;
+    margin-left: 8px !important;
+  }
+
+  strong {
+    font-size: 18px !important;
+  }
+
+  p {
+    font-size: 14px !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .prefix-card {
+    padding: 10px !important;
+  }
+
+  .text-container {
+    font-size: 16px !important;
+    margin-right: 4% !important;
+  }
+
+  .d-flex {
+    flex-direction: row !important;
+    padding: 6px !important;
+  }
+
+  svg {
+    width: 22px !important;
+    height: 22px !important;
+    margin-left: 6px !important;
+  }
+
+  strong {
+    font-size: 16px !important;
+  }
+
+  p {
+    font-size: 13px !important;
+  }
+}

@@ -1,0 +1,109 @@
+.faq-card {
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 10px 25px 20px 25px !important;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+button {
+  font-size: 17px;
+  padding: 8px 5px 10px 5px !important;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.212);
+}
+
+.accordion-item:last-child {
+  border-bottom: none !important;
+}
+
+.accordion-header img {
+  margin-left: 14px;
+}
+
+.accordion-body {
+  padding-right: 5px !important;
+}
+
+.accordion-button {
+  background-color: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+  text-align: right;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-button.collapsed {
+  background-color: white !important;
+}
+
+.accordion-button::after {
+  display: none !important; 
+}
+
+.custom-arrow {
+  font-size: 14px;
+  margin-right: 8px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.rotated {
+  transform: rotate(90deg);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.accordion-button:not(.collapsed) .custom-arrow {
+  transform: rotate(-90deg);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (max-width: 768px) {
+  .faq-card {
+    padding: 15px !important;
+  }
+
+  .section-title {
+    font-size: 18px !important;
+  }
+
+  button {
+    font-size: 16px !important;
+    padding: 6px 4px 8px 4px !important;
+  }
+
+  .custom-arrow {
+    font-size: 12px !important;
+    margin-right: 6px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-card {
+    padding: 10px !important;
+  }
+
+  .section-title {
+    font-size: 16px !important;
+  }
+
+  button {
+    font-size: 15px !important;
+  }
+
+  .custom-arrow {
+    font-size: 10px !important;
+    margin-right: 4px !important;
+  }
+}

@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-single-page',
   templateUrl: './single-page.component.html',
-  styleUrls: ['./single-page.component.scss']
+  styleUrls: ['./single-page.component.scss'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class SinglePageComponent {
 

@@ -1,74 +1,65 @@
-        <section class="container-fluid m-2 mx-auto">
-          <div class="row">
-            <div
-              class="col-12  comment-wrapper"
-              *ngFor="let comment of commentCards"
-            >
-              <div class="card rounded-comment-card ">
-                <img
-                  class="comment-card-img-top"
-                  [src]="comment.imagePath"
-                  [alt]="comment.name"
-                />
-  
-                <div class="comment-card-body border-0">
-                  <div
-                    class="d-flex align-items-center justify-content-center mt-2 mb-2 gap-3  mobile-gap"
-                  >
-                    <p class="comment-card-title1 m-0">برگذار کننده</p>
-                    <p class="comment-card-title2 m-0">همراه اول</p>
-                  </div>
-  
-                  <div
-                    class="d-flex align-items-center justify-content-center col-12 gap-3 mb-3"
-                  >
-                    <span>
-                      <p
-                        class="m-0 d-flex align-items-center justify-content-center"
-                      >
-                        213
-                      </p>
-                      <p class="m-0 text-muted">دنبال کننده</p>
-                    </span>
-                    <span class="col-line"></span>
-                    <span>
-                      <p
-                        class="m-0 d-flex align-items-center justify-content-center"
-                      >
-                        213
-                      </p>
-                      <p class="m-0 text-muted">کل رویداد ها</p>
-                    </span>
-                    <span class="col-line"></span>
-                    <span>
-                      <p
-                        class="m-0 d-flex align-items-center justify-content-center"
-                      >
-                        213
-                      </p>
-                      <p class="m-0 text-muted">رویداد فعال</p>
-                    </span>
-                  </div>
-                  <div class="d-flex justify-content-evenly gap-2">
-                    <button class="custom-btn lightblue-custom-btn col-6">
-                      دنبال کردن
-                    </button>
-                    <button class="custom-btn gray-custom-btn col-6">
-                      مشاهده همه
-                    </button>
-                  </div>
-  
-                  <div class="d-flex justify-content-start flex-wrap gap-2 my-3  mobile-gap">
-                    <p class="comment-card-text m-0">
-                      {{ comment.text }}
-                    </p>
-                  </div>
-                  <p class="fotter-p">
-                    بیشتر از ۸۰ نفر (۹۰%) این برگزارکننده را توصیه کرده‌اند.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-  
+<section class="container-fluid m-2 mx-auto">
+  <div
+    class="col-12 comment-wrapper mx-auto"
+    *ngFor="let comment of commentCards"
+  >
+    <div class="card rounded-comment-card">
+      <img
+        class="comment-card-img-top"
+        [src]="comment.imagePath"
+        [alt]="comment.name"
+      /> 
+
+      <div class="comment-card-body border-0">
+        <div
+          class="d-flex align-items-center justify-content-center mt-2 mb-2 gap-3 mobile-gap"
+        >
+          <p class="comment-card-title1 m-0">برگذار کننده</p>
+          <p class="comment-card-title2 m-0">همراه اول</p>
+        </div>
+
+        <div
+          class="d-flex align-items-center justify-content-center col-12 gap-3 mb-3"
+        >
+          <span>
+            <p class="m-0 d-flex align-items-center justify-content-center">
+              213
+            </p>
+            <p class="m-0 text-muted">دنبال کننده</p>
+          </span>
+          <span class="col-line"></span>
+          <span>
+            <p class="m-0 d-flex align-items-center justify-content-center">
+              213
+            </p>
+            <p class="m-0 text-muted">کل رویداد ها</p>
+          </span>
+          <span class="col-line"></span>
+          <span>
+            <p class="m-0 d-flex align-items-center justify-content-center">
+              213
+            </p>
+            <p class="m-0 text-muted">رویداد فعال</p>
+          </span>
+        </div>
+        <div class="d-flex justify-content-evenly gap-2">
+          <button class="custom-btn lightblue-custom-btn col-6">
+            دنبال کردن
+          </button>
+          <button class="custom-btn gray-custom-btn col-6">مشاهده همه</button>
+        </div>
+
+        <div
+          class="d-flex justify-content-start flex-wrap gap-2 my-3 mobile-gap"
+        >
+          <p class="comment-card-text m-0">
+            {{ comment.text }}
+          </p>
+        </div>
+        <p class="fotter-p">
+          بیشتر از ۸۰ نفر (۹۰%) این برگزارکننده را توصیه کرده‌اند.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
