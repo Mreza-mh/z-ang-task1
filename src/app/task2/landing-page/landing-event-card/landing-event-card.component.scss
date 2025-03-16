@@ -1,0 +1,118 @@
+/* ----------- start ---[event-card-container]---------------- */
+.event-card-container {
+  max-width: 522px;
+}
+/* ------------ end ---[event-card-container]---------------- */
+
+/* ----------- start ---[event-card]---------------- */
+.event-card {
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 5 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ------------ end ---[event-card]---------------- */
+
+/* ----------- start ---[event-card-images]---------------- */
+.event-card-img-small {
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
+
+.event-card-img-large {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 65%;
+  left: 31%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+/* ------------ end ---[event-card-images]---------------- */
+
+/* ----------- start ---[event-card-content]---------------- */
+.event-card-content {
+  position: absolute;
+  top: 31%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: bold;
+  color: #000;
+  text-align: start;
+}
+
+.event-card-content h2 {
+  font-size: 42px;
+  white-space: nowrap;
+}
+
+.event-card-content p {
+  font-size: 20px;
+}
+/* ------------ end ---[event-card-content]---------------- */
+
+/* ----------- start ---[responsive]---------------- */
+@media (max-width: 1400px) {
+  .event-card-content h2 {
+    font-size: 35px;
+  }
+  .event-card-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .event-card {
+    border-radius: 30px;
+    aspect-ratio: 12 / 7.5;
+  }
+  .event-card {
+    border-radius: 18px;
+  }
+  .event-card-content {
+    left: 70%;
+  }
+  .event-card-content {
+    padding: 3px 20px 0 0px !important;
+  }
+  .event-card-content h2 {
+    font-size: 25px !important;
+  }
+  .event-card-content p {
+    font-size: 12px !important;
+  }
+
+  .event-card-img-large {
+    width: 20%;
+  }
+
+  .event-card-img-small {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 45%;
+    left: 24%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+  }
+  .event-card-img-large {
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 60%;
+    left: 31%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* ------------ end ---[responsive]---------------- */

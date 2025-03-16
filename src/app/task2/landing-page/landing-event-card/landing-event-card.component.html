@@ -1,0 +1,27 @@
+<section class="container-fluid">
+  <div class="row flex-nowrap scroll-container">
+    <div
+      class="col-xl-4 col-lg-5 col-md-6 col-sm-8 col-8 event-card-container"
+      *ngFor="let event of eventcards"
+    >
+      <div class="event-card" [ngStyle]="{ 'background-color': event.bgColor }">
+        <div>
+          <img
+            class="event-card-img-small"
+            [src]="event.imagePath1"
+            [alt]="event.text"
+          />
+          <img
+            class="event-card-img-large"
+            [src]="event.imagePath2"
+            [alt]="event.text"
+          />
+        </div>
+        <div class="event-card-content">
+          <h2>{{ event.title }}</h2>
+          <p>{{ event.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

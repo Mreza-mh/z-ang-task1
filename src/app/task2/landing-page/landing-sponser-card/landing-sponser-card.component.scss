@@ -1,0 +1,47 @@
+/* ----------- start ---[sponsor-card]---------------- */
+.sponsor-card {
+  height: 283px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+  }
+}
+/* ------------ end ---[sponsor-card]---------------- */
+
+/* ----------- start ---[responsive]---------------- */
+@media (max-width: 1400px) {
+  .sponsor-card h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sponsor-card {
+    height: 263px;
+  }
+}
+@media (max-width: 576px) {
+  .sponsor-card {
+    height: 220px;
+    // border-radius: 10px;
+    padding: 4px;
+  }
+
+  .sponsor-card img {
+    max-width: 45%;
+  }
+
+  .sponsor-card h2 {
+    font-size: 15px;
+    margin-top: 30px !important;
+  }
+}
+/* ------------ end ---[responsive]---------------- */

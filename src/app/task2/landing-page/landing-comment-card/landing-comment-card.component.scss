@@ -1,0 +1,113 @@
+/* ---------------------------- Review Card Styles ---------------------------- */
+.review-card {
+  margin: 55px 0;
+  position: relative;
+  border-radius: 25px;
+  background: #ffffff;
+  padding: 10%;
+  height: 325px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  overflow: visible !important;
+  font-size: 20px;
+}
+
+.review-card-img {
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.review-card-footer {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  border: 1px solid #c2c2c2;
+  border-radius: 31px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* ---------------------------- Review Container ---------------------------- */
+
+.review-item {
+  max-width: 600px !important;
+}
+
+/* ---------------------------- Review Text Formatting ---------------------------- */
+
+.review-text {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  margin: 0;
+}
+
+/* ---------------------------- Responsive Styles ---------------------------- */
+
+@media (max-width: 1400px) {
+  .review-card-title {
+    margin-top: 20px;
+  }
+
+  .review-card-footer {
+    font-size: 18px;
+    gap: 5px !important;
+    bottom: -24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .review-card {
+    height: 200px;
+    padding: 3%;
+    border-radius: 15px;
+    font-size: 15px;
+    h5 {
+      margin-top: 30px !important;
+    }
+    .text-container {
+      margin-top: 8px !important;
+    }
+  }
+
+  .review-card-body {
+    padding: 0px 10px;
+  }
+
+  .review-card-img {
+    top: -50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .review-card-title {
+    margin-top: 35px !important;
+  }
+
+  .review-card-footer {
+    font-size: 14px;
+    gap: 5px !important;
+    bottom: -20px;
+  }
+  .review-text {
+    -webkit-line-clamp: 4; /* Shortest version for tiny screens */
+  }
+}

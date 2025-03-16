@@ -1,15 +1,11 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+  selector: 'app-landing-event-card',
+  templateUrl: './landing-event-card.component.html',
+  styleUrls: ['./landing-event-card.component.scss'],
 })
-export class LandingPageComponent {
-
-
-
+export class LandingEventCardComponent {
   eventcards = [
     {
       imagePath1: '../../../assets/svg/event-card/uni.svg',
@@ -54,8 +50,5 @@ export class LandingPageComponent {
       bgColor: '#DDF2FF',
     },
   ];
-
-
-
-
+  
 }
