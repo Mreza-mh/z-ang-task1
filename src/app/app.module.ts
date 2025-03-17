@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -24,7 +24,11 @@ import { PrecourseCardComponent } from './task2/single-page/precourse-card/preco
 import { CourseScheduleComponent } from './task2/single-page/course-schedule/course-schedule.component';
 import { FAQCardComponent } from './task2/single-page/faq-card/faq-card.component';
 import { CostCardComponent } from './task2/single-page/cost-card/cost-card.component';
+import { LandingCardBoxComponent } from './task2/landing-page/landing-card-box/landing-card-box.component';
+import { register } from 'swiper/element/bundle';
+import { LandingCardFullBoxComponent } from './task2/landing-page/landing-card-full-box/landing-card-full-box.component';
 
+register();
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,13 +52,13 @@ import { CostCardComponent } from './task2/single-page/cost-card/cost-card.compo
     PrecourseCardComponent,
     CourseScheduleComponent,
     FAQCardComponent,
-    CostCardComponent
+    CostCardComponent,
+    LandingCardBoxComponent,
+    LandingCardFullBoxComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}

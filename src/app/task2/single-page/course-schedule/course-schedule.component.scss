@@ -1,3 +1,4 @@
+/* ----------- start ---[schedule-card]---------------- */
 .schedule-card {
   border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -5,27 +6,36 @@
   padding: 10px 25px 20px 25px !important;
   margin-bottom: 20px;
 }
+/* ------------ end ---[schedule-card]---------------- */
+
+/* ----------- start ---[typography]---------------- */
 .text-container {
   font-size: 17px;
 }
+
 .section-title {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 10px;
 }
+
 th {
   color: #808080;
   font-weight: 400;
 }
+
 tr {
   font-size: 17px;
   font-weight: 300;
 }
+/* ------------ end ---[typography]---------------- */
 
+/* ----------- start ---[table]---------------- */
 .table th,
 .table td {
   padding: 0.5rem;
 }
+
 .small-col {
   width: 22%;
 }
@@ -33,6 +43,7 @@ tr {
 .table tbody tr {
   border-bottom: 2px solid rgba(128, 128, 128, 0.212);
 }
+
 .table tbody tr:first-child {
   border-top: 2px solid rgba(128, 128, 128, 0.212);
 }
@@ -40,14 +51,15 @@ tr {
 .table tbody tr:last-child {
   border-bottom: white;
 }
+/* ------------ end ---[table]---------------- */
 
+/* ----------- start ---[buttons]---------------- */
 .white-buttonn {
   background: #ffffff;
   border-radius: 25px;
-  border: none;
+  border: 1px solid #808080;
   color: #808080;
   cursor: pointer;
-  border: 1px solid #808080;
   font-size: 17px;
   padding: 0;
   max-height: 31px;
@@ -60,10 +72,9 @@ tr {
 .cyan-button {
   background: #5FC8FF;
   border-radius: 25px;
-  border: none;
+  border: 1px solid gray;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  border: 1px solid gray;
   font-size: 17px;
   padding: 0;
   max-height: 31px;
@@ -72,13 +83,13 @@ tr {
 .cyan-button:hover {
   background: #dadada;
 }
+/* ------------ end ---[buttons]---------------- */
 
-
+/* ----------- start ---[responsive]---------------- */
 @media (max-width: 768px) {
   .schedule-card {
     padding: 15px !important;
   }
-
 
   .table {
     font-size: 15px !important;
@@ -92,13 +103,11 @@ tr {
   .small-col {
     width: 28% !important;
   }
-  .cyan-button{
-    font-size: 16px !important;
-  }
+
+  .cyan-button,
   .white-buttonn {
     font-size: 16px !important;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -123,10 +132,9 @@ tr {
     width: 30% !important;
   }
 
-  .cyan-button{
-    font-size: 15px !important;
-  }
+  .cyan-button,
   .white-buttonn {
     font-size: 15px !important;
   }
 }
+/* ------------ end ---[responsive]---------------- */

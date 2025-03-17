@@ -1,3 +1,4 @@
+
 .custom-box {
   background: white;
   padding: 10px 30px;
@@ -11,6 +12,8 @@
   color: #808080;
 }
 
+/* ------------ start ---[Image Placeholder]------------ */
+
 .image-placeholder {
   background-color: #e9ecef;
   height: 175px;
@@ -18,39 +21,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; 
+  width: 100%;
   max-width: 802px;
   margin: auto;
 }
 
+/* ------------ start ---[Responsive Adjustments]------------ */
+
 @media (max-width: 768px) {
   .custom-box {
-    padding: 15px 20px; 
-    font-size: 16px; 
+    padding: 15px 20px;
+    font-size: 16px;
   }
 
   .image-placeholder {
-    height: 150px; 
+    height: 150px;
   }
 
   h4 {
-    font-size: 18px; 
+    font-size: 18px;
   }
 
   p {
-    font-size: 15px; 
-    line-height: 1.6; 
+    font-size: 15px;
+    line-height: 1.6;
   }
 }
 
+/* ------------ start ---[Mobile Adjustments]------------ */
+
 @media (max-width: 480px) {
   .custom-box {
-    padding: 10px 15px; 
+    padding: 10px 15px;
     font-size: 15px;
   }
 
   .image-placeholder {
-    height: 130px; 
+    height: 130px;
   }
 
   h4 {
@@ -62,3 +69,5 @@
     line-height: 1.5;
   }
 }
+
+/* ------------ end ---[Mobile Adjustments]------------ */
