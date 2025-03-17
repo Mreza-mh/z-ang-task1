@@ -58,7 +58,7 @@
 }
 
 .head {
-  background-color: #ffffff00;
+  background-color: #8b2e2e00 !important;
 }
 
 .day {
@@ -69,5 +69,10 @@
   border-radius: 10px;
   font-size: 16px;
   color: #333;
+
+}
+.empty{
+    background-color: #F8F8F8 !important;
+    color: #F8F8F8;
 }
 /* ------------ end ---[utilities]---------------- */
