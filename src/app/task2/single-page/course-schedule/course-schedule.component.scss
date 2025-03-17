@@ -1,8 +1,7 @@
+@import '../../variables';
+
 /* ----------- start ---[schedule-card]---------------- */
 .schedule-card {
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: rgb(255, 255, 255);
   padding: 10px 25px 20px 25px !important;
   margin-bottom: 20px;
 }
@@ -10,12 +9,12 @@
 
 /* ----------- start ---[typography]---------------- */
 .text-container {
-  font-size: 17px;
+  font-size: $font-size-small;
 }
 
 .section-title {
   font-weight: bold;
-  font-size: 22px;
+  font-size: $font-size-large;
   margin-bottom: 10px;
 }
 
@@ -25,7 +24,7 @@ th {
 }
 
 tr {
-  font-size: 17px;
+  font-size: $font-size-small;
   font-weight: 300;
 }
 /* ------------ end ---[typography]---------------- */
@@ -54,35 +53,29 @@ tr {
 /* ------------ end ---[table]---------------- */
 
 /* ----------- start ---[buttons]---------------- */
-.white-buttonn {
-  background: #ffffff;
-  border-radius: 25px;
-  border: 1px solid #808080;
-  color: #808080;
-  cursor: pointer;
-  font-size: 17px;
-  padding: 0;
+.session-btn {
+  font-size: $font-size-small;
+  padding: 3px 23px ;
   max-height: 31px;
 }
 
-.white-buttonn:hover {
-  background: #dadada;
+.session-btn:hover {
+  background: white;
+  color: $primary-color;
 }
-
-.cyan-button {
-  background: #5FC8FF;
-  border-radius: 25px;
-  border: 1px solid gray;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  font-size: 17px;
-  padding: 0;
+.session-btn2 {
+  font-size: $font-size-small;
+  padding: 3px 23px ;
   max-height: 31px;
+  border: 2px solid #cecece4d;
 }
 
-.cyan-button:hover {
-  background: #dadada;
+.session-btn2:hover {
+  color: white;
+  background: $primary-color;
 }
+
+
 /* ------------ end ---[buttons]---------------- */
 
 /* ----------- start ---[responsive]---------------- */
@@ -104,8 +97,8 @@ tr {
     width: 28% !important;
   }
 
-  .cyan-button,
-  .white-buttonn {
+  .session-btn,
+  .session-btn2 {
     font-size: 16px !important;
   }
 }
@@ -132,9 +125,10 @@ tr {
     width: 30% !important;
   }
 
-  .cyan-button,
-  .white-buttonn {
-    font-size: 15px !important;
+  .session-btn,
+  .session-btn2 {
+    font-size: 12px !important;
   }
+
 }
 /* ------------ end ---[responsive]---------------- */

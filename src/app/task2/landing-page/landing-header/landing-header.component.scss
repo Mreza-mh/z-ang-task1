@@ -1,3 +1,4 @@
+@import '../../variables';
 /* ----------- start ---[hero-section]---------------- */
 .hero-section {
   position: relative;
@@ -78,7 +79,7 @@
 }
 
 .sub-heading {
-  font-size: 22px;
+  font-size: $font-size-large;
   font-weight: medium;
   margin-bottom: 0.3rem;
   max-width: 500px;
@@ -121,7 +122,7 @@
 
 @media (max-width: 780px) {
   .highlight-text {
-    font-size: 20px;
+    font-size: $font-size-medium;
     margin-bottom: 0;
     margin-right: 15px;
     color: #ffffff;
@@ -136,22 +137,15 @@
 /* ------------ end ---[typography]---------------- */
 
 /* ----------- start ---[button]---------------- */
-.primary-button {
-  background: #5fc8ff;
-  border-radius: 13px;
-  border: none;
-  color: white;
-  cursor: pointer;
+.more-btn {
   margin-top: 4rem;
-}
-
-.primary-button:hover {
-  background: #4ab7e5;
+  padding: 15px 34px;
 }
 
 @media (max-width: 780px) {
-  .primary-button {
+  .more-btn {
     margin-top: 20px !important;
+    padding: 8px 16px;
   }
 }
 /* ------------ end ---[button]---------------- */
@@ -191,6 +185,3 @@
 }
 /* ------------ end ---[responsive]---------------- */
 
-.spacing-top {
-  margin-top: 4rem;
-}

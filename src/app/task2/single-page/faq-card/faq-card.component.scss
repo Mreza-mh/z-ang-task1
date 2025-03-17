@@ -1,8 +1,7 @@
+@import '../../variables';
+
 /* ----------- start ---[faq-card]---------------- */
 .faq-card {
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: #fff;
   padding: 10px 25px 20px 25px !important;
   margin-bottom: 20px;
 }
@@ -11,12 +10,12 @@
 /* ----------- start ---[typography]---------------- */
 .section-title {
   font-weight: bold;
-  font-size: 22px;
+  font-size: $font-size-large;
   margin-bottom: 10px;
 }
 
 button {
-  font-size: 17px;
+  font-size: $font-size-small;
   padding: 8px 5px 10px 5px !important;
 }
 /* ------------ end ---[typography]---------------- */

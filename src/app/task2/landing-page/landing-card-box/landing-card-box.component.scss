@@ -1,7 +1,8 @@
+@import "../../variables";
 /* ----------- start ---[course-card]---------------- */
 .course-card {
   border-radius: 30px;
-  background: #ffffff;
+  background: white;
   padding: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -10,7 +11,7 @@
 /* ----------- start ---[course-card-content]---------------- */
 .course-card-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: $font-size-medium;
   max-width: 90%;
   white-space: normal;
 }
@@ -66,7 +67,6 @@
   }
 }
 
-
 @media (max-width: 450px) {
   .course-card {
     padding: 6px;
@@ -102,35 +102,29 @@
 }
 /* ------------ end ---[utilities]---------------- */
 
-
-
 .course-card {
   transition: transform 0.3s ease-in-out;
 }
 
 .course-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.008);
 }
-
-
 
 .card-container {
   position: relative;
   overflow: hidden;
 }
 
-
-
 .card-container {
   position: relative;
-  overflow: hidden;  
+  overflow: hidden;
 }
 .mySwiper {
   direction: rtl;
   max-width: 610px;
 }
 .course-container {
-  margin-right: -100px !important; 
+  margin-right: -100px !important;
 }
 
 .swiper-button-prev {
@@ -138,11 +132,10 @@
 }
 
 @media (max-width: 768px) {
-    .mySwiper {
+  .mySwiper {
     max-width: 100%;
     padding: 0px 4px 0 0;
   }
-
 
   .course-card {
     padding: 3px;

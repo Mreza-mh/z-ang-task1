@@ -1,11 +1,9 @@
+@import '../../variables';
 
 .custom-box {
-  background: white;
   padding: 10px 30px;
-  border-radius: 25px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: 1px solid #dcdcdc;
-  font-size: 17px;
+  font-size: $font-size-small;
 }
 
 .custom-box p {

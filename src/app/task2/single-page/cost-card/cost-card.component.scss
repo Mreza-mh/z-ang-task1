@@ -1,30 +1,29 @@
+@import '../../variables';
+
 /* ----------- start ---[cost-card]---------------- */
 .cost {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 2% 2%;
-  background: #ffffff;
-  border-radius: 25px;
 }
 /* ------------ end ---[cost-card]---------------- */
 
 /* ----------- start ---[cost-titles]---------------- */
 .cost-title1 {
-  font-size: 22px;
+  font-size: $font-size-large;
   font-weight: bold;
 }
 
 .cost-title2 {
-  font-size: 20px;
+  font-size: $font-size-medium;
   margin-left: 30px;
 }
 
 .cost-title3 {
-  font-size: 17px;
+  font-size: $font-size-small;
   white-space: nowrap;
 }
 
 .cost-title4 {
-  font-size: 20px;
+  font-size: $font-size-medium;
   font-weight: bold;
   margin-right: 5px;
 }
@@ -36,9 +35,9 @@
 
 /* ----------- start ---[buttons]---------------- */
 .blue-custom-btn {
-  background: #52b9ec;
+  background: $primary-color;
   border-radius: 16px;
-  font-size: 20px;
+  font-size: $font-size-medium;
   border: none;
   color: white;
   cursor: pointer;
@@ -47,7 +46,8 @@
 }
 
 .blue-custom-btn:hover {
-  background: #3a9cd6;
+  background: #ffffff;
+  color: $primary-color;
 }
 /* ------------ end ---[buttons]---------------- */
 
@@ -81,7 +81,7 @@
 .cost-title2 {
   position: relative;
   display: inline-block;
-  font-size: 20px;
+  font-size: $font-size-medium;
   font-weight: bold;
 }
 

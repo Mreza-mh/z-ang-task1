@@ -1,15 +1,13 @@
+@import '../../variables';
 /* ----------- start ---[Review Card Styles]---------------- */
 .review-card {
   margin: 55px 0;
   position: relative;
-  border-radius: 25px;
-  background: #ffffff;
   padding: 10%;
   height: 325px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 5;
   overflow: visible !important;
-  font-size: 20px;
+  font-size: $font-size-medium;
 }
 
 .review-card-img {

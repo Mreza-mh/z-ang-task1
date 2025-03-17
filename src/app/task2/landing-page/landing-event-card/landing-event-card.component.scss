@@ -1,3 +1,4 @@
+@import '../../variables';
 /* ----------- start ---[event-card-container]---------------- */
 .event-card-container {
   max-width: 522px;
@@ -6,13 +7,9 @@
 
 /* ----------- start ---[event-card]---------------- */
 .event-card {
-  border-radius: 30px;
   position: relative;
   overflow: hidden;
   aspect-ratio: 5 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 /* ------------ end ---[event-card]---------------- */
 
@@ -56,7 +53,7 @@
 }
 
 .event-card-content p {
-  font-size: 20px;
+  font-size: $font-size-medium;
 }
 /* ------------ end ---[event-card-content]---------------- */
 
@@ -72,11 +69,8 @@
 
 @media (max-width: 450px) {
   .event-card {
-    border-radius: 30px;
+    border-radius: 25px;
     aspect-ratio: 12 / 7.5;
-  }
-  .event-card {
-    border-radius: 18px;
   }
   .event-card-content {
     left: 70%;

@@ -5,7 +5,7 @@
       *ngFor="let sponsor of sponsers"
     >
       <div
-        class="sponsor-card"
+        class="sponsor-card card-custom"
         [ngStyle]="{ 'background-color': sponsor.bgColor }"
       >
         <img [src]="sponsor.imagePath" [alt]="sponsor.text" />

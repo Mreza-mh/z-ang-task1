@@ -1,3 +1,4 @@
+@import '../../variables';
 /* ----------- start ---[search-section]---------------- */
 .search-section {
   color: #000;
@@ -33,21 +34,14 @@
 /* ------------ end ---[search-field]---------------- */
 
 /* ----------- start ---[button]---------------- */
-.secondary-button {
-  background: #ffffff;
-  border-radius: 13px;
-  border: none;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-
-.secondary-button:hover {
-  background: #dadada;
+.search-btn {
+  color: rgb(0, 0, 0) !important;
+  padding: 9.5px 25px !important;
 }
 
 @media (max-width: 480px) {
-  .secondary-button {
-    font-size: 13px;
+  .search-btn {
+    font-size: 13px !important;
     padding: 6px 10px !important;
   }
 }

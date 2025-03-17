@@ -7,7 +7,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class LandingPageComponent {
-
   eventcards = [
     {
       imagePath1: '../../../assets/svg/event-card/uni.svg',
@@ -52,8 +51,4 @@ export class LandingPageComponent {
       bgColor: '#DDF2FF',
     },
   ];
-
-
-
-
 }

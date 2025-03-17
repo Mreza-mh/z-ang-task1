@@ -1,3 +1,5 @@
+@import '../../variables';
+
 /* ----------- start ---[comment-wrapper]---------------- */
 .comment-wrapper {
   box-sizing: border-box;
@@ -7,10 +9,7 @@
 
 /* ----------- start ---[calendar]---------------- */
 .calendar {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 5% 10%;
-  background: #ffffff;
-  border-radius: 25px;
 }
 
 .calendar .title {
@@ -76,3 +75,5 @@
     color: #F8F8F8;
 }
 /* ------------ end ---[utilities]---------------- */
+
+

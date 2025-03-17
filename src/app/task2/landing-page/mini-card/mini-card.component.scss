@@ -1,12 +1,9 @@
+@import '../../variables';
 /* ----------- start ---[card-container]---------------- */
 .card-container {
-  border-radius: 30px;
   position: relative;
   overflow: hidden;
   aspect-ratio: 5 / 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .card-container img {

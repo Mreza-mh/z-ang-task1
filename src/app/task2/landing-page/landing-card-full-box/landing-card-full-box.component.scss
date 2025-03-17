@@ -1,6 +1,7 @@
+@import '../../variables';
 /* ----------- start ---[Main Container]---------------- */
 .full-container {
-  background: rgb(74, 192, 255);
+  background: $primary-color !important;
   max-width: 840px;
   position: relative;
   height: 500px;
