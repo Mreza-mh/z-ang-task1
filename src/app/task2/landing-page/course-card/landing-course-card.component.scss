@@ -1,11 +1,12 @@
 @import '../../variables';
-/* ----------- start ---[course-card]---------------- */
+
+/* ----------- start ---[Course Card Styles]---------------- */
 .course-card {
   padding: 8px;
 }
-/* ------------ end ---[course-card]---------------- */
+/* ------------ end ---[Course Card Styles]---------------- */
 
-/* ----------- start ---[course-card-content]---------------- */
+/* ----------- start ---[Course Card Content]---------------- */
 .course-card-title {
   font-weight: bold;
   font-size: $font-size-medium;
@@ -21,9 +22,9 @@
 .course-container {
   max-width: 365px !important;
 }
-/* ------------ end ---[course-card-content]---------------- */
+/* ------------ end ---[Course Card Content]---------------- */
 
-/* ----------- start ---[course-card-footer]---------------- */
+/* ----------- start ---[Course Card Footer]---------------- */
 .course-card-footer {
   border: 1px solid #c2c2c2;
   border-radius: 31px;
@@ -49,9 +50,9 @@
   margin: 0;
   font-size: 18px;
 }
-/* ------------ end ---[course-card-footer]---------------- */
+/* ------------ end ---[Course Card Footer]---------------- */
 
-/* ----------- start ---[responsive]---------------- */
+/* ----------- start ---[Responsive Styles]---------------- */
 @media (max-width: 635px) {
   .course-card-title {
     font-size: 18px !important;
@@ -63,7 +64,6 @@
     font-size: 15px !important;
   }
 }
-
 
 @media (max-width: 450px) {
   .course-card {
@@ -91,11 +91,10 @@
     height: 24px;
   }
 }
+/* ------------ end ---[Responsive Styles]---------------- */
 
-/* ------------ end ---[responsive]---------------- */
-
-/* ----------- start ---[utilities]---------------- */
+/* ----------- start ---[Utilities]---------------- */
 .fw-bold {
   font-weight: bold;
 }
-/* ------------ end ---[utilities]---------------- */
+/* ------------ end ---[Utilities]---------------- */

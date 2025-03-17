@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-sponser-card.component.scss'],
 })
 export class LandingSponserCardComponent {
-  sponsers = [
+  sponsors = [
     {
       imagePath: '../../../assets/svg/sponser-card/hamrah-aval.svg',
       text: 'همراه اول ',

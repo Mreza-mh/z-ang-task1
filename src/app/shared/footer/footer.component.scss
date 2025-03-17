@@ -64,6 +64,7 @@
     }
     .list-col {
       width: 100%;
+      z-index: 10;
     }
     p {
       font-size: 20px;
@@ -84,6 +85,7 @@
   bottom: -10%;
   opacity: 0.05;
   left: 1%;
+  z-index: -1;
   img {
     width: 100%;
     height: auto;
@@ -97,4 +99,28 @@
     margin-bottom: 20px;
     width: 100%;
   }
+}
+
+.footer-cols {
+  position: relative;
+  z-index: 2;
+}
+
+.icons svg {
+  transition: fill 0.3s ease-in-out, transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  fill: #ffcc00;
+  transform: scale(1.1);
+}
+
+.list-col ul li {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.list-col ul li:hover {
+  color: #ffcc00;
 }

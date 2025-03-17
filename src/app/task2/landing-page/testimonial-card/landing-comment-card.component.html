@@ -1,0 +1,31 @@
+<section class="container-fluid m-2">
+  <div class="row flex-nowrap testimonial-scroll-wrapper scroll-container">
+    <div
+      class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-9 testimonial-item"
+      *ngFor="let testimonial of testimonials"
+    >
+      <div class="card testimonial-card card-custom">
+        <img
+          class="testimonial-card-img"
+          [src]="testimonial.imagePath"
+          [alt]="testimonial.name"
+        />
+
+        <div class="testimonial-card-body border-0">
+          <h5 class="testimonial-card-title">{{ testimonial.name }}</h5>
+
+          <div class="d-flex justify-content-start flex-wrap gap-2 mt-3 text-container">
+            <p class="testimonial-text m-0">
+              {{ testimonial.text }}
+            </p>
+          </div>
+        </div>
+
+        <div class="testimonial-card-footer d-flex align-items-center gap-4">
+          <p class="text-muted m-0">شرکت کننده دوره</p>
+          <p class="m-0">{{ testimonial.courseTitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

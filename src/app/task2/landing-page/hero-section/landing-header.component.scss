@@ -1,5 +1,6 @@
 @import '../../variables';
-/* ----------- start ---[hero-section]---------------- */
+
+/* ----------- start ---[Hero Section]---------------- */
 .hero-section {
   position: relative;
   background: url("../../../../assets/image/hader.png");
@@ -25,9 +26,9 @@
     background-attachment: fixed;
   }
 }
-/* ------------ end ---[hero-section]---------------- */
+/* ------------ end ---[Hero Section]---------------- */
 
-/* ----------- start ---[content-wrapper]---------------- */
+/* ----------- start ---[Content Wrapper]---------------- */
 .content-wrapper {
   width: 100%;
   position: relative;
@@ -49,7 +50,6 @@
 @media (max-width: 400px) {
   .content-wrapper {
     top: 20% !important;
-    
   }
 }
 
@@ -61,9 +61,9 @@
     width: 50%;
   }
 }
-/* ------------ end ---[content-wrapper]---------------- */
+/* ------------ end ---[Content Wrapper]---------------- */
 
-/* ----------- start ---[typography]---------------- */
+/* ----------- start ---[Typography]---------------- */
 .main-heading {
   font-weight: bold;
   font-size: 52px;
@@ -134,9 +134,9 @@
     font-size: 18px;
   }
 }
-/* ------------ end ---[typography]---------------- */
+/* ------------ end ---[Typography]---------------- */
 
-/* ----------- start ---[button]---------------- */
+/* ----------- start ---[Button]---------------- */
 .more-btn {
   margin-top: 4rem;
   padding: 15px 34px;
@@ -148,9 +148,9 @@
     padding: 8px 16px;
   }
 }
-/* ------------ end ---[button]---------------- */
+/* ------------ end ---[Button]---------------- */
 
-/* ----------- start ---[responsive]---------------- */
+/* ----------- start ---[Responsive]---------------- */
 @media (max-width: 780px) {
   .flex-container {
     display: flex;
@@ -183,5 +183,4 @@
     margin-top: 15px;
   }
 }
-/* ------------ end ---[responsive]---------------- */
-
+/* ------------ end ---[Responsive]---------------- */

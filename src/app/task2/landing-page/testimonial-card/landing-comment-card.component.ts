@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-comment-card.component.scss'],
 })
 export class LandingCommentCardComponent {
-  commentCards = [
+  testimonials = [
     {
       id: 1,
       name: 'محمد شامی',

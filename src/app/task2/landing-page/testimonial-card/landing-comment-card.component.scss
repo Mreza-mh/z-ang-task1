@@ -1,6 +1,7 @@
 @import '../../variables';
-/* ----------- start ---[Review Card Styles]---------------- */
-.review-card {
+
+/* ----------- start ---[Testimonial Card Styles]---------------- */
+.testimonial-card {
   margin: 55px 0;
   position: relative;
   padding: 10%;
@@ -10,7 +11,7 @@
   font-size: $font-size-medium;
 }
 
-.review-card-img {
+.testimonial-card-img {
   position: absolute;
   top: -75px;
   left: 50%;
@@ -22,7 +23,7 @@
   z-index: 10;
 }
 
-.review-card-footer {
+.testimonial-card-footer {
   position: absolute;
   bottom: -25px;
   left: 50%;
@@ -38,16 +39,16 @@
   z-index: 10;
   white-space: nowrap;
 }
-/* ------------ end ---[Review Card Styles]---------------- */
+/* ------------ end ---[Testimonial Card Styles]---------------- */
 
-/* ----------- start ---[Review Container]---------------- */
-.review-item {
+/* ----------- start ---[Testimonial Container]---------------- */
+.testimonial-item {
   max-width: 600px !important;
 }
-/* ------------ end ---[Review Container]---------------- */
+/* ------------ end ---[Testimonial Container]---------------- */
 
-/* ----------- start ---[Review Text Formatting]---------------- */
-.review-text {
+/* ----------- start ---[Testimonial Text Formatting]---------------- */
+.testimonial-text {
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -56,15 +57,15 @@
   -webkit-box-orient: vertical;
   margin: 0;
 }
-/* ------------ end ---[Review Text Formatting]---------------- */
+/* ------------ end ---[Testimonial Text Formatting]---------------- */
 
 /* ----------- start ---[Responsive Styles]---------------- */
 @media (max-width: 1400px) {
-  .review-card-title {
+  .testimonial-card-title {
     margin-top: 20px;
   }
 
-  .review-card-footer {
+  .testimonial-card-footer {
     font-size: 18px;
     gap: 5px !important;
     bottom: -24px;
@@ -72,34 +73,34 @@
 }
 
 @media (max-width: 450px) {
-  .review-card {
+  .testimonial-card {
     height: 200px;
     padding: 3%;
     border-radius: 15px;
     font-size: 15px;
   }
 
-  .review-card-body {
+  .testimonial-card-body {
     padding: 0px 10px;
   }
 
-  .review-card-img {
+  .testimonial-card-img {
     top: -50px;
     width: 100px;
     height: 100px;
   }
 
-  .review-card-title {
+  .testimonial-card-title {
     margin-top: 35px !important;
   }
 
-  .review-card-footer {
+  .testimonial-card-footer {
     font-size: 14px;
     gap: 5px !important;
     bottom: -20px;
   }
 
-  .review-text {
+  .testimonial-text {
     -webkit-line-clamp: 4; /* Shorter version for smaller screens */
   }
 }

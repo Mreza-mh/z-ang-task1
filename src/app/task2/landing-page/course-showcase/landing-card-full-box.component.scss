@@ -1,6 +1,7 @@
 @import '../../variables';
+
 /* ----------- start ---[Main Container]---------------- */
-.full-container {
+.showcase-container {
   background: $primary-color !important;
   max-width: 840px;
   position: relative;
@@ -9,7 +10,7 @@
   padding: 15px 8px 5px 0;
 }
 
-.light-bg {
+.showcase-light-bg {
   background: linear-gradient(
     to right,
     rgb(145, 217, 255),
@@ -25,13 +26,13 @@
   max-width: 840px;
 }
 
-.max-with {
+.showcase-max-width {
   max-width: 1371px;
 }
 /* ------------ end ---[Main Container]---------------- */
 
 /* ----------- start ---[Swiper Section]---------------- */
-.swipere {
+.showcase-swiper {
   position: absolute;
   left: 0;
   width: 75%;
@@ -39,7 +40,7 @@
 /* ------------ end ---[Swiper Section]---------------- */
 
 /* ----------- start ---[Text Content]---------------- */
-.text-container {
+.showcase-text {
   color: #ffffff;
   max-width: 50px;
   font-size: 40px;
@@ -49,7 +50,7 @@
 /* ------------ end ---[Text Content]---------------- */
 
 /* ----------- start ---[SVG Styling]---------------- */
-.svg {
+.showcase-svg {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -57,7 +58,7 @@
 /* ------------ end ---[SVG Styling]---------------- */
 
 /* ----------- start ---[Scroll Container]---------------- */
-.scroll-container {
+.showcase-scroll-container {
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: thin;
@@ -65,29 +66,29 @@
   padding-bottom: 15px;
 }
 
-.scroll-container::-webkit-scrollbar {
+.showcase-scroll-container::-webkit-scrollbar {
   height: 4px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
+.showcase-scroll-container::-webkit-scrollbar-thumb {
   background-color: #eb0303;
   border-radius: 3px;
 }
 /* ------------ end ---[Scroll Container]---------------- */
 
 /* ----------- start ---[Responsive Styles]---------------- */
-.responsive-m {
+.showcase-responsive-margin {
   margin: 0 10px 0 10px;
 }
 
 @media (max-width: 1525px) {
-  .text-container {
+  .showcase-text {
     margin-right: 0px;
   }
 }
 
 @media (max-width: 768px) {
-  .swipere {
+  .showcase-swiper {
     position: absolute;
     left: 0;
     bottom: 20px;
@@ -96,27 +97,27 @@
 }
 
 @media (max-width: 476px) {
-  .full-container {
+  .showcase-container {
     height: 440px;
     padding: 10px;
     border-radius: 25px;
     max-width: 100%;
   }
 
-  .swipere {
+  .showcase-swiper {
     left: 0;
     bottom: 5px;
     width: 100%;
   }
 
-  .light-bg {
+  .showcase-light-bg {
     left: 0;
     width: 20%;
     height: 440px;
     border-radius: 25px !important;
   }
 
-  .text-container {
+  .showcase-text {
     font-size: 24px;
     max-width: 100%;
     text-align: center;

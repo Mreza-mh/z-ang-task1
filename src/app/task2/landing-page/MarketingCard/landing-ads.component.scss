@@ -1,7 +1,7 @@
 @import "../../variables";
 
-/* ----------- start ---[advertisement-card]---------------- */
-.advertisement-card {
+/* ----------- start ---[promo-card]---------------- */
+.promo-card {
   position: relative;
   margin: 0 auto;
   background: linear-gradient(
@@ -14,8 +14,8 @@
   justify-content: space-between;
   padding: 20px;
 
-  // ----------- start ---[ad-button]----------------
-  .ad-button {
+  // ----------- start ---[promo-button]----------------
+  .promo-button {
     position: absolute;
     left: 2.2%;
     top: 77%;
@@ -26,57 +26,56 @@
     color: $primary-color;
     font-weight: bold;
     cursor: pointer;
-    // padding: 4px 10px;
     padding: 8px 10px 4px 10px !important;
     transition: all 0.3s ease;
   }
-  // ------------ end ---[ad-button]----------------
+  // ------------ end ---[promo-button]----------------
 
-  // ----------- start ---[ad-text]----------------
-  .ad-text {
+  // ----------- start ---[promo-text]----------------
+  .promo-text {
     position: absolute;
     left: 78%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    .ad-tagline {
+    .promo-tagline {
       font-size: 35px;
       margin: 0;
       color: #ffffffee;
       font-weight: 200;
     }
-    .ad-title {
+    .promo-title {
       font-size: 40px;
       color: white;
       font-weight: 400;
       white-space: nowrap;
     }
   }
-  // ------------ end ---[ad-text]----------------
+  // ------------ end ---[promo-text]----------------
 
   // ----------- start ---[responsive]----------------
   @media screen and (max-width: 1600px) {
-    .ad-button {
+    .promo-button {
       left: 4% !important;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .ad-text {
+    .promo-text {
       position: static;
       transform: none;
       text-align: center;
     }
 
-    .ad-text .ad-tagline {
+    .promo-text .promo-tagline {
       font-size: 28px;
     }
 
-    .ad-text .ad-title {
+    .promo-text .promo-title {
       font-size: 32px;
     }
 
-    .ad-button {
+    .promo-button {
       left: 8% !important;
       top: 77%;
       padding: 4px 4px 0px 4px !important;
@@ -85,20 +84,20 @@
   }
 
   @media screen and (max-width: 500px) {
-    .ad-text {
+    .promo-text {
       position: absolute;
       left: 76%;
       top: 50%;
       transform: translate(-50%, -50%);
 
-      .ad-tagline {
+      .promo-tagline {
         font-size: 13px;
         margin: 0;
         color: #ffffffee;
         font-weight: 300;
         text-shadow: 1px 1px 1px #ffffff30;
       }
-      .ad-title {
+      .promo-title {
         font-size: $font-size-large;
         color: white;
         font-weight: 400;
@@ -106,7 +105,7 @@
         text-shadow: 2px 2px 2px #ffffff34;
       }
     }
-    .ad-button {
+    .promo-button {
       left: 8% !important;
       top: 72%;
       padding: 4px 4px 0px 4px !important;
@@ -117,14 +116,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .advertisement-card {
+  .promo-card {
     max-height: 180px !important;
   }
 }
 @media screen and (max-width: 450px) {
-  .advertisement-card {
+  .promo-card {
     max-height: 130px !important;
   }
 }
 
-/* ------------ end ---[advertisement-card]---------------- */
+/* ------------ end ---[promo-card]---------------- */

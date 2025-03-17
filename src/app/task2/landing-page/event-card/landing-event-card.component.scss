@@ -1,19 +1,20 @@
 @import '../../variables';
-/* ----------- start ---[event-card-container]---------------- */
+
+/* ----------- start ---[Event Card Container]---------------- */
 .event-card-container {
   max-width: 522px;
 }
-/* ------------ end ---[event-card-container]---------------- */
+/* ------------ end ---[Event Card Container]---------------- */
 
-/* ----------- start ---[event-card]---------------- */
+/* ----------- start ---[Event Card]---------------- */
 .event-card {
   position: relative;
   overflow: hidden;
   aspect-ratio: 5 / 3;
 }
-/* ------------ end ---[event-card]---------------- */
+/* ------------ end ---[Event Card]---------------- */
 
-/* ----------- start ---[event-card-images]---------------- */
+/* ----------- start ---[Event Card Images]---------------- */
 .event-card-img-small {
   width: 40%;
   height: 40%;
@@ -33,9 +34,9 @@
   z-index: 1;
   transform: translate(-50%, -50%);
 }
-/* ------------ end ---[event-card-images]---------------- */
+/* ------------ end ---[Event Card Images]---------------- */
 
-/* ----------- start ---[event-card-content]---------------- */
+/* ----------- start ---[Event Card Content]---------------- */
 .event-card-content {
   position: absolute;
   top: 31%;
@@ -55,9 +56,9 @@
 .event-card-content p {
   font-size: $font-size-medium;
 }
-/* ------------ end ---[event-card-content]---------------- */
+/* ------------ end ---[Event Card Content]---------------- */
 
-/* ----------- start ---[responsive]---------------- */
+/* ----------- start ---[Responsive Styles]---------------- */
 @media (max-width: 1400px) {
   .event-card-content h2 {
     font-size: 35px;
@@ -108,5 +109,4 @@
     transform: translate(-50%, -50%);
   }
 }
-
-/* ------------ end ---[responsive]---------------- */
+/* ------------ end ---[Responsive Styles]---------------- */

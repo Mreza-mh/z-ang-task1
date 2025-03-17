@@ -1,0 +1,36 @@
+////////////////////////////////////////////////////////
+$primary-color: #007bff; 
+
+
+
+.custom-primary-btn {
+  background: white;
+  border-radius: 22px;
+  border: none;
+  color: $primary-color;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.custom-primary-btn:hover {
+  background: $primary-color;
+  color: white;
+}
+
+.custom-not-primary-btn {
+  background: $primary-color;
+  border-radius: 22px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.custom-not-primary-btn:hover {
+  background: white;
+  color: $primary-color;
+}

@@ -8,17 +8,6 @@
   text-align: left !important;
 }
 
-.blue-custom-btn{
-    background:#5FC8FF;
-    border-radius: 13px;
-    border: none;
-}
-
-.white-custom-btn{
-    background:#ffffff;
-    border-radius: 13px;
-    border: none;
-}
 .me-7{
     margin-right: 5rem;
 }
@@ -126,4 +115,33 @@
   li:hover {
     background: #f8f9fa;
   }
+}
+
+
+.custom-primary-btn {
+  background: white;
+  border-radius: 15px;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-primary-btn:hover {
+  background: #414141c0;
+  color: white;
+}
+
+.custom-not-primary-btn {
+  background: #5FC8FF;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-not-primary-btn:hover {
+  background: white;
+  color: #5FC8FF;
 }

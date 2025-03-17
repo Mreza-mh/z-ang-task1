@@ -1,5 +1,6 @@
 @import '../../variables';
-/* ----------- start ---[sponsor-card]---------------- */
+
+/* ----------- start ---[Sponsor Card]---------------- */
 .sponsor-card {
   height: 283px;
   overflow: hidden;
@@ -14,9 +15,9 @@
     color: rgb(0, 0, 0);
   }
 }
-/* ------------ end ---[sponsor-card]---------------- */
+/* ------------ end ---[Sponsor Card]---------------- */
 
-/* ----------- start ---[responsive]---------------- */
+/* ----------- start ---[Responsive]---------------- */
 @media (max-width: 1400px) {
   .sponsor-card h2 {
     font-size: 16px;
@@ -28,10 +29,10 @@
     height: 263px;
   }
 }
+
 @media (max-width: 576px) {
   .sponsor-card {
     height: 220px;
-    // border-radius: 10px;
     padding: 4px;
   }
 
@@ -44,4 +45,4 @@
     margin-top: 30px !important;
   }
 }
-/* ------------ end ---[responsive]---------------- */
+/* ------------ end ---[Responsive]---------------- */

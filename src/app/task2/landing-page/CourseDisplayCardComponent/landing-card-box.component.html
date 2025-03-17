@@ -1,10 +1,10 @@
-<div class="card-container">
+<div class="course-display-wrapper">
   <swiper-container
-    class="mySwiper"
+    class="course-display-swiper"
     effect="coverflow"
     grab-cursor="true"
-  centered-slides="false"  
-  slides-per-view="1.7" 
+    centered-slides="false"
+    slides-per-view="1.7"
     loop="false"
     space-between="30px"
     coverflow-effect-rotate="0"
@@ -15,7 +15,7 @@
   >
     <swiper-slide *ngFor="let course of courses">
       <div class="slide-content">
-        <div class="card course-card">
+        <div class="card course-display-card">
           <img
             class="card-img-top"
             [src]="course.imagePath"
@@ -23,18 +23,18 @@
           />
 
           <div class="card-body border-0">
-            <h5 class="course-card-title">{{ course.title }}</h5>
+            <h5 class="course-display-title">{{ course.title }}</h5>
 
             <div class="d-flex justify-content-start flex-wrap gap-2 mt-3">
               <img
                 src="../../../assets/svg/course-card/calender.svg"
                 alt="Date Icon"
               />
-              <p class="course-card-text m-0">{{ course.day }}</p>
+              <p class="course-display-text m-0">{{ course.day }}</p>
               <span>|</span>
-              <p class="course-card-text m-0">{{ course.date }}</p>
+              <p class="course-display-text m-0">{{ course.date }}</p>
               <span>|</span>
-              <p class="course-card-text m-0">{{ course.time }}</p>
+              <p class="course-display-text m-0">{{ course.time }}</p>
             </div>
 
             <div class="d-flex justify-content-start flex-wrap gap-2 mt-1">
@@ -42,9 +42,9 @@
                 src="../../../assets/svg/course-card/mapicon.svg"
                 alt="Location Icon"
               />
-              <p class="course-card-text fw-bold m-0">{{ course.mode }}</p>
+              <p class="course-display-text fw-bold m-0">{{ course.mode }}</p>
               <span>|</span>
-              <p class="course-card-text m-0">{{ course.location }}</p>
+              <p class="course-display-text m-0">{{ course.location }}</p>
             </div>
 
             <div class="d-flex justify-content-start flex-wrap gap-2 mt-1">
@@ -52,15 +52,15 @@
                 src="../../../assets/svg/course-card/tag.svg"
                 alt="Price Icon"
               />
-              <p class="course-card-text m-0">{{ course.price }}</p>
-              <p class="course-card-text m-0">{{ course.currency }}</p>
+              <p class="course-display-text m-0">{{ course.price }}</p>
+              <p class="course-display-text m-0">{{ course.currency }}</p>
             </div>
           </div>
 
-          <div class="course-card-footer d-flex align-items-center">
+          <div class="course-display-footer d-flex align-items-center">
             <img [src]="course.organizerImage" alt="Organizer" />
-            <p class="course-card-footer-title text-muted">برگزار کننده</p>
-            <p class="course-card-text">{{ course.organizer }}</p>
+            <p class="course-display-footer-title text-muted">برگزار کننده</p>
+            <p class="course-display-text">{{ course.organizer }}</p>
           </div>
         </div>
       </div>

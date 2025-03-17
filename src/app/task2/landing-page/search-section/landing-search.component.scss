@@ -1,19 +1,21 @@
 @import '../../variables';
-/* ----------- start ---[search-section]---------------- */
+
+/* ----------- start ---[Search Section]---------------- */
 .search-section {
   color: #000;
   background: #e6f5ff;
   padding: 30px 0;
 }
-/* ------------ end ---[search-section]---------------- */
+/* ------------ end ---[Search Section]---------------- */
 
-/* ----------- start ---[search-field]---------------- */
+/* ----------- start ---[Search Field]---------------- */
 .search-field {
   border-radius: 30px;
   height: 65px;
   border: 2px solid #5fc7ff23;
   padding-right: 20px;
   font-size: 18px;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -31,9 +33,9 @@
     padding-right: 10px;
   }
 }
-/* ------------ end ---[search-field]---------------- */
+/* ------------ end ---[Search Field]---------------- */
 
-/* ----------- start ---[button]---------------- */
+/* ----------- start ---[Search Button]---------------- */
 .search-btn {
   color: rgb(0, 0, 0) !important;
   padding: 9.5px 25px !important;
@@ -45,11 +47,11 @@
     padding: 6px 10px !important;
   }
 }
-/* ------------ end ---[button]---------------- */
+/* ------------ end ---[Search Button]---------------- */
 
-/* ----------- start ---[responsive-layout]---------------- */
+/* ----------- start ---[Responsive Layout]---------------- */
 .flex-wrap-container {
   flex-wrap: wrap;
   gap: 10px;
 }
-/* ------------ end ---[responsive-layout]---------------- */
+/* ------------ end ---[Responsive Layout]---------------- */
